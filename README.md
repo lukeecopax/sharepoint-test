@@ -1,19 +1,24 @@
-# 🎈 Blank app template
+# Streamlit SharePoint Excel Viewer
 
-A simple Streamlit app template for you to modify!
+This project is a simple Streamlit application that downloads an Excel file from a SharePoint site using the Office365 REST Python Client and displays the first few rows of the "Archive" sheet.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## Features
 
-### How to run it on your own machine
+- **Streamlit UI:** Provides a clean and interactive interface to view data.
+- **Secure Credentials Management:** Uses Streamlit's secrets management to securely store your SharePoint credentials.
+- **SharePoint File Download:** Authenticates with SharePoint and downloads an Excel file on-demand.
+- **Excel Data Display:** Reads and displays the "Archive" sheet from the downloaded Excel file using pandas and openpyxl.
 
-1. Install the requirements
+## Prerequisites
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+- **Python 3.7+**
+- Access to the relevant SharePoint site.
+- Basic knowledge of Python and Streamlit.
 
-2. Run the app
+## Installation
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/your_username/streamlit-sharepoint-excel-viewer.git
+   cd streamlit-sharepoint-excel-viewer
